@@ -19,7 +19,7 @@ const StickyMobileCTA = () => {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background/95 backdrop-blur-lg border-t border-border md:hidden">
       <Button variant="cta" size="lg" className="w-full" asChild>
-        <a href="#form">Solicitar Avaliação</a>
+        <a href="#form">Tornar-se Parceiro</a>
       </Button>
     </div>
   );
