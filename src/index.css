@@ -31,12 +31,12 @@ All colors MUST be HSL.
     --accent: 326 85% 55%;
     --accent-foreground: 0 0% 100%;
 
-    --neon-blue: 194 100% 50%;
+    --neon-blue: 260 80% 55%;
     --neon-cyan: 194 100% 55%;
-    --neon-light-blue: 194 80% 65%;
-    --cyber-blue: 194 100% 50%;
-    --cyber-light: 18 90% 55%;
-    --cyber-dark: 194 100% 35%;
+    --neon-light-blue: 260 60% 65%;
+    --cyber-blue: 260 80% 55%;
+    --cyber-light: 30 95% 55%;
+    --cyber-dark: 260 80% 40%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
@@ -50,10 +50,10 @@ All colors MUST be HSL.
     --success: 142 71% 45%;
     --success-foreground: 0 0% 100%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(326, 85%, 55%), hsl(18, 90%, 55%));
-    --gradient-accent: linear-gradient(135deg, hsl(326, 85%, 55%), hsl(194, 100%, 55%));
-    --gradient-neon: linear-gradient(135deg, hsl(326, 85%, 55%), hsl(18, 90%, 55%));
-    --gradient-cta: linear-gradient(90deg, hsl(340, 82%, 52%), hsl(15, 88%, 55%));
+    --gradient-primary: linear-gradient(135deg, hsl(260, 80%, 55%), hsl(326, 85%, 55%), hsl(30, 95%, 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(260, 80%, 55%), hsl(326, 85%, 55%));
+    --gradient-neon: linear-gradient(135deg, hsl(260, 80%, 55%), hsl(326, 85%, 55%), hsl(30, 95%, 55%));
+    --gradient-cta: linear-gradient(90deg, hsl(326, 85%, 55%), hsl(30, 95%, 55%));
     --gradient-hero: linear-gradient(180deg, hsl(230, 25%, 8%), hsl(230, 25%, 12%));
     --gradient-glass: linear-gradient(135deg, hsl(220 25% 18% / 0.7), hsl(220 25% 14% / 0.5));
     --shadow-glow: 0 0 40px hsl(326 85% 55% / 0.4);
@@ -62,7 +62,8 @@ All colors MUST be HSL.
     --shadow-card: 0 4px 30px hsl(220 30% 8% / 0.5);
     --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     
-    --gradient-cyber: linear-gradient(135deg, hsl(326, 85%, 55%), hsl(18, 90%, 55%));
+    --gradient-cyber: linear-gradient(135deg, hsl(260, 80%, 55%), hsl(326, 85%, 55%), hsl(30, 95%, 55%));
+    --gradient-icon: linear-gradient(135deg, hsl(260, 80%, 55%), hsl(326, 85%, 55%), hsl(30, 95%, 55%));
   }
 
   .dark {
