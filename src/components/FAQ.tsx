@@ -18,30 +18,6 @@ const faqs = [
     question: "O que são as medidas de gestão de risco exigidas?",
     answer: "A NIS2 exige múltiplas medidas, incluindo: análise de risco e segurança de sistemas, gestão de incidentes, continuidade de negócio, segurança na cadeia de abastecimento, e crucialmente - testes regulares e gestão de vulnerabilidades. As empresas devem implementar políticas de criptografia, formação de colaboradores, controlo de acessos, autenticação multi-fator e comunicações seguras. Todas as medidas devem ser documentadas e demonstráveis em auditorias."
   },
-  {
-    question: "Como funciona a obrigação de notificação de incidentes?",
-    answer: "As entidades devem notificar incidentes significativos às autoridades competentes em três fases: alerta inicial (early warning) em caso de suspeita de ataque com impacto relevante, notificação oficial com avaliação detalhada do incidente e impacto, e relatórios intermédios e finais. Os prazos são rigorosos e o incumprimento pode resultar em penalizações adicionais."
-  },
-  {
-    question: "Qual é a responsabilidade da gestão de topo?",
-    answer: "A direção das entidades tem responsabilidade direta e legal pelo cumprimento da NIS2. Devem aprovar e supervisionar as medidas de gestão de risco, frequentar formação em cibersegurança, garantir formação interna e podem ser responsabilizados pessoalmente em caso de incumprimento. Esta é uma mudança significativa que coloca a cibersegurança ao nível das prioridades estratégicas da empresa."
-  },
-  {
-    question: "Quando devo começar a preparar a minha empresa?",
-    answer: "Deve começar imediatamente. Embora o prazo de transposição seja outubro de 2024, a implementação prática das medidas pode levar meses. Recomendamos: identificar se está abrangido (agora), avaliar o nível atual de conformidade (Q1 2024), implementar medidas técnicas e organizacionais (Q2-Q3 2024) e realizar testes e ajustes finais (Q4 2024). Quanto mais cedo começar, menor o risco de incumprimento."
-  },
-  {
-    question: "Como a CyberInspect ajuda especificamente na conformidade NIS2?",
-    answer: "A CyberInspect foca-se na componente técnica mais mensurável da NIS2: 'testes regulares e gestão de vulnerabilidades'. Realizamos testes técnicos regulares (scans de vulnerabilidade, penetration tests), identificamos e priorizamos falhas de segurança, estruturamos planos de correção e fornecemos documentação completa para demonstrar conformidade em auditorias. Não somos uma consultoria geral de compliance, mas sim especialistas na execução prática da parte técnica da NIS2."
-  },
-  {
-    question: "Que tipos de testes de segurança são obrigatórios?",
-    answer: "A NIS2 exige 'testes regulares' mas não especifica tipos exatos. As melhores práticas incluem: vulnerability scanning (análise automática de sistemas expostos), penetration testing (testes de intrusão controlados), security assessments (avaliação de configurações e políticas) e security audits (revisão de conformidade com standards). A CyberInspect oferece todos estes serviços adaptados ao contexto e criticidade de cada empresa."
-  },
-  {
-    question: "A NIS2 substitui outras certificações como ISO 27001?",
-    answer: "Não substitui, mas complementa. A NIS2 é uma obrigação legal com requisitos específicos e penalizações, enquanto certificações como ISO 27001 são standards voluntários (embora altamente recomendados). Na prática, empresas certificadas ISO 27001 já terão muitos controlos implementados, mas precisarão verificar gaps específicos da NIS2, especialmente em notificação de incidentes, responsabilização da gestão e requisitos de supervisão. A CyberInspect pode ajudar em ambos os contextos."
-  }
 ];
 
 const FAQ = () => {
