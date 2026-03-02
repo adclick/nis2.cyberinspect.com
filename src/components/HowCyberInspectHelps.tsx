@@ -1,87 +1,83 @@
 import { Button } from "@/components/ui/button";
-import { Shield, CheckCircle2, AlertTriangle } from "lucide-react";
+import { CheckCircle2, Zap, BarChart3, FileText, RefreshCw, Shield } from "lucide-react";
 
-const steps = [
-  "Scans automáticos e manuais para identificar vulnerabilidades nos seus ativos digitais",
-  "Priorização de riscos por impacto e probabilidade de exploração",
-  "Plano de correção estruturado e acompanhamento da remediação",
-  "Documentação completa para demonstração de conformidade em auditorias NIS2",
+const benefits = [
+  {
+    icon: Zap,
+    title: "Escala e produtividade",
+    description: "Execute testes de cibersegurança para múltiplos clientes de forma eficiente e centralizada.",
+  },
+  {
+    icon: BarChart3,
+    title: "Avaliação de risco estruturada",
+    description: "Identifique e priorize vulnerabilidades com metodologia consistente entre todos os seus clientes.",
+  },
+  {
+    icon: FileText,
+    title: "Documentação formal",
+    description: "Relatórios prontos para demonstrar conformidade NIS2 em auditorias — sem trabalho manual.",
+  },
+  {
+    icon: RefreshCw,
+    title: "Serviço contínuo",
+    description: "Transforme diagnósticos pontuais em contratos recorrentes com testes regulares automatizados.",
+  },
+  {
+    icon: Shield,
+    title: "Testes exigidos pela NIS2",
+    description: "Vulnerability scanning, penetration testing e security assessments — tudo numa plataforma.",
+  },
+  {
+    icon: CheckCircle2,
+    title: "Oportunidades de remediação",
+    description: "Cada vulnerabilidade encontrada é uma oportunidade de serviço adicional para o seu cliente.",
+  },
 ];
 
 const HowCyberInspectHelps = () => {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-                A{" "}
-                <span className="bg-gradient-cyber bg-clip-text text-transparent">
-                  CyberInspect
-                </span>{" "}
-                ajuda-o a dar esse passo
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Focamo-nos na componente mais prática e mensurável da NIS2:
-                testes regulares e gestão de vulnerabilidades.
-              </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
+              A{" "}
+              <span className="bg-gradient-cyber bg-clip-text text-transparent">
+                CyberInspect
+              </span>{" "}
+              é a solução
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Tudo o que precisa para transformar a NIS2 num serviço escalável,
+              estruturado e recorrente — numa única plataforma.
+            </p>
+          </div>
 
-              <ul className="space-y-4 mb-8">
-                {steps.map((step, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyberBlue flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">{step}</span>
-                  </li>
-                ))}
-              </ul>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {benefits.map((benefit, index) => {
+              const Icon = benefit.icon;
+              return (
+                <div
+                  key={index}
+                  className="p-6 rounded-xl bg-gradient-glass backdrop-blur-sm border border-border hover:border-primary/30 hover:shadow-card transition-all duration-300"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-gradient-cta flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
+                  <p className="text-muted-foreground text-sm">{benefit.description}</p>
+                </div>
+              );
+            })}
+          </div>
 
-              <Button variant="cta" size="lg" asChild>
-                <a href="#form">Solicitar Avaliação</a>
-              </Button>
-            </div>
-
-            <div className="bg-gradient-to-r from-cyberBlue/10 to-primary/10 rounded-2xl border border-cyberBlue/20 shadow-card p-8">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 rounded-lg bg-gradient-cta flex items-center justify-center flex-shrink-0">
-                  <AlertTriangle className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">
-                    A sua empresa está abrangida?
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    Os testes de cibersegurança são obrigatórios apenas para
-                    entidades abrangidas pela Diretiva NIS2 — entidades
-                    essenciais e importantes em setores críticos.
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-3 text-sm text-muted-foreground">
-                <div className="flex items-start gap-2">
-                  <Shield className="w-4 h-4 text-cyberBlue mt-0.5 flex-shrink-0" />
-                  <span>
-                    <strong className="text-foreground">Essenciais:</strong>{" "}
-                    Energia, transportes, saúde, infraestruturas digitais, banca,
-                    água
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Shield className="w-4 h-4 text-cyberBlue mt-0.5 flex-shrink-0" />
-                  <span>
-                    <strong className="text-foreground">Importantes:</strong>{" "}
-                    Correios, resíduos, indústria, fornecedores digitais, químicos
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Shield className="w-4 h-4 text-destructive mt-0.5 flex-shrink-0" />
-                  <span>
-                    Multas até <strong className="text-foreground">10M€ ou 2%</strong> do volume de negócios
-                  </span>
-                </div>
-              </div>
-            </div>
+          <div className="text-center">
+            <Button variant="cta" size="xl" className="group" asChild>
+              <a href="#form">
+                Tornar-se Parceiro
+                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+            </Button>
           </div>
         </div>
       </div>
