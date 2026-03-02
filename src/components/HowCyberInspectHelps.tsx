@@ -61,7 +61,7 @@ const HowCyberInspectHelps = () => {
                   key={index}
                   className="p-6 rounded-xl bg-gradient-glass backdrop-blur-sm border border-border hover:border-primary/30 hover:shadow-card transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-gradient-cta flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-icon flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>

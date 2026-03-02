@@ -52,7 +52,7 @@ const NIS2Opportunity = () => {
                   className="p-6 hover:shadow-card transition-all duration-300 bg-gradient-glass backdrop-blur-sm border-border"
                 >
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-cta flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-icon flex items-center justify-center flex-shrink-0">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
