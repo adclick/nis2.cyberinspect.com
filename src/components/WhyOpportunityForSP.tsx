@@ -37,7 +37,7 @@ const WhyOpportunityForSP = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
               Porquê é uma{" "}
               <span className="bg-gradient-cyber bg-clip-text text-transparent">
-                oportunidade para SPs
+                oportunidade para Parceiros
               </span>
               ?
             </h2>
