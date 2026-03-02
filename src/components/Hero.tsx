@@ -24,7 +24,7 @@ const Hero = () => {
 
               <p className="text-lg md:text-xl text-muted-foreground/90 max-w-xl leading-relaxed">
                 A CyberInspect é a forma mais simples de descomplificar a NIS2
-                para os seus clientes — e escalar o seu negócio com novos
+                para os seus clientes - e escalar o seu negócio com novos
                 serviços de cibersegurança.
               </p>
             </div>

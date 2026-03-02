@@ -39,7 +39,7 @@ const NIS2Opportunity = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A Diretiva NIS2 cria uma procura sem precedentes por serviços de
-              cibersegurança — e o seu negócio pode captar essa procura.
+              cibersegurança - e o seu negócio pode captar essa procura.
             </p>
           </div>
 

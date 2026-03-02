@@ -15,7 +15,7 @@ const benefits = [
   {
     icon: FileText,
     title: "Documentação formal",
-    description: "Relatórios prontos para demonstrar conformidade NIS2 em auditorias — sem trabalho manual.",
+    description: "Relatórios prontos para demonstrar conformidade NIS2 em auditorias - sem trabalho manual.",
   },
   {
     icon: RefreshCw,
@@ -25,7 +25,7 @@ const benefits = [
   {
     icon: Shield,
     title: "Testes exigidos pela NIS2",
-    description: "Vulnerability scanning, penetration testing e security assessments — tudo numa plataforma.",
+    description: "Vulnerability scanning, penetration testing e security assessments - tudo numa plataforma.",
   },
   {
     icon: CheckCircle2,
@@ -49,7 +49,7 @@ const HowCyberInspectHelps = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Tudo o que precisa para transformar a NIS2 num serviço escalável,
-              estruturado e recorrente — numa única plataforma.
+              estruturado e recorrente - numa única plataforma.
             </p>
           </div>
 
