@@ -31,12 +31,12 @@ All colors MUST be HSL.
     --accent: 326 85% 55%;
     --accent-foreground: 0 0% 100%;
 
-    --neon-blue: 326 85% 55%;
+    --neon-blue: 280 70% 55%;
     --neon-cyan: 194 100% 55%;
-    --neon-light-blue: 326 70% 65%;
-    --cyber-blue: 326 85% 55%;
-    --cyber-light: 326 70% 65%;
-    --cyber-dark: 326 85% 40%;
+    --neon-light-blue: 194 80% 65%;
+    --cyber-blue: 280 70% 55%;
+    --cyber-light: 194 100% 55%;
+    --cyber-dark: 280 70% 40%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;

@@ -1,18 +1,18 @@
 import { Card } from "@/components/ui/card";
-import { Handshake, TrendingUp, RotateCcw, Wrench, Star } from "lucide-react";
+import { Handshake, TrendingUp, RotateCcw, Star } from "lucide-react";
 
 const reasons = [
   {
     icon: Handshake,
     title: "Traduz obrigação em crescimento",
     description:
-      "A obrigação legal dos seus clientes (empresas abrangidas) transforma-se em receita recorrente para o seu negócio.",
+      "A obrigação legal dos seus clientes transforma-se em receita recorrente para o seu negócio.",
   },
   {
     icon: Star,
     title: "Eleva-o a parceiro estratégico",
     description:
-      "Deixa de ser visto como fornecedor de IT e passa a ser um parceiro essencial na conformidade e segurança dos clientes.",
+      "Deixa de ser visto como fornecedor de IT e passa a ser um parceiro essencial na conformidade dos clientes.",
   },
   {
     icon: TrendingUp,
@@ -24,13 +24,7 @@ const reasons = [
     icon: RotateCcw,
     title: "Abre porta a serviços contínuos",
     description:
-      "A NIS2 exige testes regulares — o que significa contratos de acompanhamento, não projetos pontuais.",
-  },
-  {
-    icon: Wrench,
-    title: "Oportunidade de remediação",
-    description:
-      "Cada vulnerabilidade identificada é uma oportunidade de serviço adicional de correção e melhoria.",
+      "A NIS2 exige testes regulares - o que significa contratos de acompanhamento, não projetos pontuais.",
   },
 ];
 
@@ -48,12 +42,12 @@ const WhyOpportunityForSP = () => {
               ?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A NIS2 não é só uma obrigação para os seus clientes — é uma
+              A NIS2 não é só uma obrigação para os seus clientes - é uma
               alavanca de crescimento para o seu negócio.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {reasons.map((reason, index) => {
               const Icon = reason.icon;
               return (
