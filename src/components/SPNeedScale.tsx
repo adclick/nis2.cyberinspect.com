@@ -25,7 +25,7 @@ const SPNeedScale = () => {
               , não é sustentável.
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Os Service Providers enfrentam desafios reais quando tentam
+              Os Parceiros enfrentam desafios reais quando tentam
               aproveitar esta oportunidade sem as ferramentas certas.
             </p>
           </div>

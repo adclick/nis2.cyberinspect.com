@@ -198,7 +198,7 @@ const FinalCTA = () => {
           {/* Bottom Text */}
           <div className="text-center mt-12">
             <p className="text-xl font-semibold mb-2">Escale o seu negócio de cibersegurança com a CyberInspect</p>
-            <p className="text-muted-foreground">Uma plataforma completa para Service Providers que querem crescer.</p>
+            <p className="text-muted-foreground">Uma plataforma completa para Parceiros que querem crescer.</p>
           </div>
         </div>
       </div>
