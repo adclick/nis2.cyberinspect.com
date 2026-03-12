@@ -5,8 +5,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { CheckCircle2, Clock, FileText } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useRef } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
 const features = [{
   icon: CheckCircle2,
   text: "Acesso completo à plataforma"
@@ -17,51 +19,86 @@ const features = [{
   icon: FileText,
   text: "Materiais de comunicação incluídos"
 }];
+
+const stripHtml = (str: string) => str.replace(/<[^>]*>/g, "").trim();
+
+const leadSchema = z.object({
+  name: z.string().trim().min(1, "Nome é obrigatório.").max(100, "Nome demasiado longo.").transform(stripHtml),
+  email: z.string().trim().email("E-mail inválido.").max(255, "E-mail demasiado longo."),
+  company: z.string().trim().min(1, "Empresa é obrigatória.").max(150, "Nome de empresa demasiado longo.").transform(stripHtml),
+  phone: z.string().regex(/^\d{9}$/, "O telemóvel deve ter exatamente 9 dígitos."),
+});
+
 const FinalCTA = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [phone, setPhone] = useState("");
+  const formLoadTime = useRef(Date.now());
+
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.replace(/\D/g, ""); // Remove non-digits
+    const value = e.target.value.replace(/\D/g, "");
     if (value.length <= 9) {
       setPhone(value);
     }
   };
+
   const formatPhone = (value: string) => {
     if (value.length <= 3) return value;
     if (value.length <= 6) return `${value.slice(0, 3)} ${value.slice(3)}`;
     return `${value.slice(0, 3)} ${value.slice(3, 6)} ${value.slice(6, 9)}`;
   };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validate phone number
-    if (phone.length !== 9) {
+    const formData = new FormData(e.currentTarget);
+
+    // Honeypot check – bots fill hidden fields
+    const honeypot = formData.get("website") as string;
+    if (honeypot) {
+      // Silently pretend success to not alert the bot
+      navigate("/obrigado");
+      return;
+    }
+
+    // Timing check – humans take at least 3 seconds to fill a form
+    if (Date.now() - formLoadTime.current < 3000) {
+      navigate("/obrigado");
+      return;
+    }
+
+    // Validate with zod
+    const result = leadSchema.safeParse({
+      name: formData.get("name"),
+      email: formData.get("email"),
+      company: formData.get("company"),
+      phone: phone,
+    });
+
+    if (!result.success) {
+      const firstError = result.error.errors[0];
       toast({
         title: "Erro de validação",
-        description: "O telemóvel deve ter exatamente 9 dígitos.",
-        variant: "destructive"
+        description: firstError.message,
+        variant: "destructive",
       });
       return;
     }
 
     setIsLoading(true);
-    const formData = new FormData(e.currentTarget);
     const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      company: formData.get("company"),
-      phone: phone,
-      timestamp: new Date().toISOString()
+      ...result.data,
+      timestamp: new Date().toISOString(),
     };
+
     try {
       const response = await fetch("https://hook.eu1.make.com/nd2gu54lcpod5mfsq18cuoijk8dpi91a", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       });
       if (response.ok) {
         navigate("/obrigado");
@@ -69,20 +106,20 @@ const FinalCTA = () => {
         toast({
           title: "Erro ao enviar",
           description: "Por favor, tente novamente.",
-          variant: "destructive"
+          variant: "destructive",
         });
       }
-    } catch (error) {
-      console.error("Error sending to Make.com:", error);
+    } catch {
       toast({
         title: "Erro ao enviar",
         description: "Por favor, tente novamente.",
-        variant: "destructive"
+        variant: "destructive",
       });
     } finally {
       setIsLoading(false);
     }
   };
+
   return <section id="form" className="py-24 bg-gradient-hero relative overflow-hidden scroll-mt-20">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent"></div>
 
@@ -107,10 +144,14 @@ const FinalCTA = () => {
             {/* Lead Form */}
             <form className="max-w-2xl mx-auto mb-8" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-4 mb-4">
-                <Input name="name" placeholder="Nome" className="h-12" required />
-                <Input name="email" type="email" placeholder="E-mail" className="h-12" required />
-                <Input name="company" placeholder="Empresa" className="h-12" required />
+                <Input name="name" placeholder="Nome" className="h-12" required maxLength={100} />
+                <Input name="email" type="email" placeholder="E-mail" className="h-12" required maxLength={255} />
+                <Input name="company" placeholder="Empresa" className="h-12" required maxLength={150} />
                 <Input name="phone" type="tel" placeholder="Telemóvel" className="h-12" value={formatPhone(phone)} onChange={handlePhoneChange} required />
+              </div>
+              {/* Honeypot – hidden from real users, bots will fill it */}
+              <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
+                <input type="text" name="website" tabIndex={-1} autoComplete="off" />
               </div>
               <div className="flex items-start gap-3 mb-6">
                 <Checkbox id="terms" className="mt-1" required />
