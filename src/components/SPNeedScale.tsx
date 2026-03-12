@@ -19,7 +19,7 @@ const SPNeedScale = () => {
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
               A oportunidade é grande. Mas sem{" "}
-              <span className="bg-gradient-cyber bg-clip-text text-transparent">
+              <span className="text-primary">
                 escala
               </span>
               , não é sustentável.

@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-foreground">
               Transforme a{" "}
-              <span className="bg-gradient-cyber bg-clip-text text-transparent">
+              <span className="text-primary">
                 NIS2
               </span>{" "}
               num serviço estruturado, escalável e recorrente
