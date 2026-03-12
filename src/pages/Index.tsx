@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import NIS2Opportunity from "@/components/NIS2Opportunity";
-import WhyOpportunityForSP from "@/components/WhyOpportunityForSP";
+
 import SPNeedScale from "@/components/SPNeedScale";
 import HowCyberInspectHelps from "@/components/HowCyberInspectHelps";
 import FinalCTA from "@/components/FinalCTA";
