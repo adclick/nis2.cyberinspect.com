@@ -4,7 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { CheckCircle2, Clock, FileText } from "lucide-react";
-import { CheckCircle2, Clock, FileText } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { FormEvent, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
