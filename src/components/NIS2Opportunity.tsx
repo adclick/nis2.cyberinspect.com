@@ -32,7 +32,7 @@ const NIS2Opportunity = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
               Qual é a{" "}
-              <span className="text-primary">
+              <span className="text-cyberLight">
                 oportunidade
               </span>{" "}
               criada pela NIS2?
