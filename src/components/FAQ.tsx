@@ -54,7 +54,7 @@ const FAQ = () => {
             ))}
           </Accordion>
 
-          <div className="mt-12 bg-gradient-to-r from-primary/10 to-cyberBlue/10 border border-primary/20 rounded-2xl p-8 text-center">
+          <div className="mt-12 bg-gradient-to-r from-cyberLight/10 to-cyberBlue/10 border border-cyberLight/20 rounded-2xl p-8 text-center">
             <h3 className="text-xl font-semibold mb-3 text-foreground">
               Ainda tem dúvidas sobre como preparar a sua empresa?
             </h3>
@@ -63,7 +63,7 @@ const FAQ = () => {
             </p>
             <a
               href="#form"
-              className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-semibold h-11 px-8 bg-gradient-cta text-white shadow-cta hover:shadow-neon hover:scale-105 transition-all duration-300 border border-white/10"
+              className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-semibold h-11 px-8 bg-cyberLight text-white shadow-cta hover:shadow-neon hover:scale-105 transition-all duration-300 border border-white/10"
             >
               Solicitar Consulta Gratuita
             </a>
