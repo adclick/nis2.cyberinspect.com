@@ -54,7 +54,7 @@ const FAQ = () => {
             ))}
           </Accordion>
 
-          <div className="mt-12 bg-gradient-to-r from-primary/10 to-cyberBlue/10 border border-primary/20 rounded-2xl p-8 text-center">
+          <div className="mt-12 bg-gradient-to-r from-cyberLight/10 to-cyberBlue/10 border border-cyberLight/20 rounded-2xl p-8 text-center">
             <h3 className="text-xl font-semibold mb-3 text-foreground">
               Ainda tem dúvidas sobre como preparar a sua empresa?
             </h3>
