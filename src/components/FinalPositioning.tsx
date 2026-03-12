@@ -55,7 +55,7 @@ const FinalPositioning = () => {
               </p>
               <Button variant="cta" size="xl" className="group" asChild>
                 <a href="#form">
-                  Solicitar Avaliação
+                  Saber Mais
                   <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </Button>

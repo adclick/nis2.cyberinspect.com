@@ -9,7 +9,7 @@ const challenges = [
 
 const SPNeedScale = () => {
   return (
-    <section className="py-24 bg-card/30">
+    <section className="pt-8 py-24 bg-card/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">

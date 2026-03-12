@@ -26,7 +26,7 @@ const stats = [
 
 const NIS2Opportunity = () => {
   return (
-    <section id="oportunidade" className="py-24 bg-card/30">
+    <section id="oportunidade" className="py-24 pb-8 bg-card/30">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
