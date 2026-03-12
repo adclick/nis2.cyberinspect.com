@@ -23,7 +23,7 @@ const NIS2Info = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-              Entenda a <span className="text-primary">Diretiva NIS2</span>
+              Entenda a <span className="text-cyberLight">Diretiva NIS2</span>
             </h2>
             <p className="text-lg text-muted-foreground">
               Novos requisitos de cibersegurança para organizações em setores críticos
