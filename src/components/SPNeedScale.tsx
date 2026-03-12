@@ -36,7 +36,7 @@ const SPNeedScale = () => {
                 key={index}
                 className="flex items-center gap-4 p-5 rounded-xl bg-gradient-glass backdrop-blur-sm border border-border hover:border-primary/30 transition-colors"
               >
-                <HelpCircle className="w-6 h-6 text-primary flex-shrink-0" />
+                <HelpCircle className="w-6 h-6 text-cyberLight flex-shrink-0" />
                 <span className="text-foreground font-medium">{challenge}</span>
               </div>
             ))}

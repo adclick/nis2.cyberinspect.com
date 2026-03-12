@@ -55,11 +55,11 @@ const Hero = () => {
 
           <div className="flex items-center gap-6 text-sm text-muted-foreground/70 justify-center">
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-primary" />
+              <TrendingUp className="w-4 h-4 text-cyberLight" />
               <span>Aumente o ticket médio</span>
             </div>
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-primary" />
+              <TrendingUp className="w-4 h-4 text-cyberLight" />
               <span>Serviço recorrente</span>
             </div>
           </div>
