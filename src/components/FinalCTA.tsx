@@ -3,7 +3,6 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CheckCircle2, Clock, FileText } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { FormEvent, useState } from "react";
@@ -23,8 +22,6 @@ const FinalCTA = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [phone, setPhone] = useState("");
-  const [sector, setSector] = useState("");
-  const [companySize, setCompanySize] = useState("");
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/\D/g, ""); // Remove non-digits
     if (value.length <= 9) {
@@ -49,25 +46,6 @@ const FinalCTA = () => {
       return;
     }
 
-    // Validate sector
-    if (!sector) {
-      toast({
-        title: "Erro de validação",
-        description: "Por favor, selecione o setor de atividade.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    // Validate company size
-    if (!companySize) {
-      toast({
-        title: "Erro de validação",
-        description: "Por favor, selecione o tamanho da empresa.",
-        variant: "destructive"
-      });
-      return;
-    }
     setIsLoading(true);
     const formData = new FormData(e.currentTarget);
     const data = {
@@ -75,8 +53,6 @@ const FinalCTA = () => {
       email: formData.get("email"),
       company: formData.get("company"),
       phone: phone,
-      sector: sector,
-      companySize: companySize,
       timestamp: new Date().toISOString()
     };
     try {
@@ -124,7 +100,7 @@ const FinalCTA = () => {
 
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">Torne-se um parceiro CyberInspect</h2>
               <p className="text-lg text-muted-foreground">
-                Preencha o formulário e a nossa equipa entrará em contacto para apresentar as condições de parceria.
+                Preencha o formulário e a nossa equipa entrará em contacto para dar a conhecer o produto e as condições de parceria.
               </p>
             </div>
 
@@ -135,39 +111,6 @@ const FinalCTA = () => {
                 <Input name="email" type="email" placeholder="E-mail" className="h-12" required />
                 <Input name="company" placeholder="Empresa" className="h-12" required />
                 <Input name="phone" type="tel" placeholder="Telemóvel" className="h-12" value={formatPhone(phone)} onChange={handlePhoneChange} required />
-                
-                <Select value={sector} onValueChange={setSector} required>
-                  <SelectTrigger className="h-12">
-                    <SelectValue placeholder="Setor de Atividade" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="energia">Energia</SelectItem>
-                    <SelectItem value="transportes">Transportes</SelectItem>
-                    <SelectItem value="saude">Saúde</SelectItem>
-                    <SelectItem value="infraestruturas-digitais">Infraestruturas Digitais</SelectItem>
-                    <SelectItem value="banca">Banca e Serviços Financeiros</SelectItem>
-                    <SelectItem value="agua">Água</SelectItem>
-                    <SelectItem value="administracao">Administração Pública</SelectItem>
-                    <SelectItem value="postais">Serviços Postais</SelectItem>
-                    <SelectItem value="telecomunicacoes">Telecomunicações</SelectItem>
-                    <SelectItem value="residuos">Gestão de Resíduos</SelectItem>
-                    <SelectItem value="industria">Indústria Transformadora</SelectItem>
-                    <SelectItem value="fornecedores-digitais">Fornecedores Digitais</SelectItem>
-                    <SelectItem value="outro">Outro</SelectItem>
-                  </SelectContent>
-                </Select>
-
-                <Select value={companySize} onValueChange={setCompanySize} required>
-                  <SelectTrigger className="h-12">
-                    <SelectValue placeholder="Tamanho da Empresa" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="micro">Micro (1-9 funcionários)</SelectItem>
-                    <SelectItem value="pequena">Pequena (10-49 funcionários)</SelectItem>
-                    <SelectItem value="media">Média (50-249 funcionários)</SelectItem>
-                    <SelectItem value="grande">Grande (250+ funcionários)</SelectItem>
-                  </SelectContent>
-                </Select>
               </div>
               <div className="flex items-start gap-3 mb-6">
                 <Checkbox id="terms" className="mt-1" required />

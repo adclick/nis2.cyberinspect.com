@@ -3,9 +3,14 @@ import { CheckCircle2, Zap, BarChart3, FileText, RefreshCw, Shield } from "lucid
 
 const benefits = [
   {
+    icon: Shield,
+    title: "Testes exigidos pela NIS2",
+    description: "Vulnerability scanning, penetration testing e security assessments - tudo numa plataforma, pronto para oferecer aos seus clientes.",
+  },
+  {
     icon: Zap,
-    title: "Escala e produtividade",
-    description: "Execute testes de cibersegurança para múltiplos clientes de forma eficiente e centralizada.",
+    title: "Escala e produtividade com IA",
+    description: "Execute testes de cibersegurança para múltiplos clientes de forma eficiente e centralizada, com relatórios e análises potenciados por inteligência artificial.",
   },
   {
     icon: BarChart3,
@@ -14,8 +19,8 @@ const benefits = [
   },
   {
     icon: FileText,
-    title: "Documentação formal",
-    description: "Relatórios prontos para demonstrar conformidade NIS2 em auditorias - sem trabalho manual.",
+    title: "Evidências técnicas",
+    description: "Documentação para demonstrar conformidade no que toca à execução de testes e resultados dos mesmos - pronta para auditorias.",
   },
   {
     icon: RefreshCw,
@@ -23,14 +28,9 @@ const benefits = [
     description: "Transforme diagnósticos pontuais em contratos recorrentes com testes regulares automatizados.",
   },
   {
-    icon: Shield,
-    title: "Testes exigidos pela NIS2",
-    description: "Vulnerability scanning, penetration testing e security assessments - tudo numa plataforma.",
-  },
-  {
     icon: CheckCircle2,
     title: "Oportunidades de remediação",
-    description: "Cada vulnerabilidade encontrada é uma oportunidade de serviço adicional para o seu cliente.",
+    description: "Cada vulnerabilidade encontrada é uma oportunidade para o Parceiro vender serviços de remediação aos seus clientes.",
   },
 ];
 
@@ -48,8 +48,8 @@ const HowCyberInspectHelps = () => {
               é a solução
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Tudo o que precisa para transformar a NIS2 num serviço escalável,
-              estruturado e recorrente - numa única plataforma.
+              O primeiro passo para transformar a NIS2 num serviço escalável,
+              estruturado e recorrente — numa única plataforma.
             </p>
           </div>
 
