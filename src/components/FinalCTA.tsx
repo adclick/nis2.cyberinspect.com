@@ -54,8 +54,6 @@ const FinalCTA = () => {
       email: formData.get("email"),
       company: formData.get("company"),
       phone: phone,
-      sector: sector,
-      companySize: companySize,
       timestamp: new Date().toISOString()
     };
     try {
