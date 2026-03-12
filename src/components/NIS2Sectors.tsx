@@ -88,7 +88,7 @@ const NIS2Sectors = () => {
               Setores Abrangidos
             </Badge>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-              Quem precisa de estar em <span className="text-primary">conformidade</span>
+              Quem precisa de estar em <span className="text-cyberLight">conformidade</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A NIS2 abrange entidades essenciais e importantes em setores críticos da economia europeia

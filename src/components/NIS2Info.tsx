@@ -53,7 +53,7 @@ const NIS2Info = () => {
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3">Onde a <span className="font-bold text-primary">CyberInspect</span> se posiciona
+                <h3 className="text-xl font-semibold mb-3">Onde a <span className="font-bold text-cyberLight">CyberInspect</span> se posiciona
                 </h3>
                 <p className="text-muted-foreground mb-4">
                   A NIS2 exige "medidas concretas de segurança, incluindo testes regulares e gestão de vulnerabilidades". 

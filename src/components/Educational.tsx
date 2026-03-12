@@ -44,7 +44,7 @@ const Educational = () => {
                   <div className="w-12 h-12 rounded-xl bg-gradient-cta flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-7 h-7 text-white" />
                   </div>
-                  <p className="text-4xl font-bold mb-2 text-primary">{stat.value}</p>
+                  <p className="text-4xl font-bold mb-2 text-cyberLight">{stat.value}</p>
                   <p className="text-muted-foreground">{stat.label}</p>
                 </Card>
               );

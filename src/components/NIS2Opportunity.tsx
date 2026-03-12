@@ -56,7 +56,7 @@ const NIS2Opportunity = () => {
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-1 text-primary">
+                      <h3 className="text-xl font-bold mb-1 text-cyberLight">
                         {stat.value}
                       </h3>
                       <p className="text-muted-foreground">{stat.label}</p>

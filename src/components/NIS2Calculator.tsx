@@ -111,7 +111,7 @@ const NIS2Calculator = () => {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <Label className="text-base font-semibold">Volume de Negócios Anual</Label>
-                  <span className="text-xl font-bold text-primary">{formatCurrency(revenue)}</span>
+                  <span className="text-xl font-bold text-cyberLight">{formatCurrency(revenue)}</span>
                 </div>
                 
                 <Slider
