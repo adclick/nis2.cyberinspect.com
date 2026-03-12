@@ -23,8 +23,6 @@ const FinalCTA = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [phone, setPhone] = useState("");
-  const [sector, setSector] = useState("");
-  const [companySize, setCompanySize] = useState("");
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/\D/g, ""); // Remove non-digits
     if (value.length <= 9) {
