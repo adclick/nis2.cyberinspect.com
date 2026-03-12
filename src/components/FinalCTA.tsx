@@ -47,25 +47,6 @@ const FinalCTA = () => {
       return;
     }
 
-    // Validate sector
-    if (!sector) {
-      toast({
-        title: "Erro de validação",
-        description: "Por favor, selecione o setor de atividade.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    // Validate company size
-    if (!companySize) {
-      toast({
-        title: "Erro de validação",
-        description: "Por favor, selecione o tamanho da empresa.",
-        variant: "destructive"
-      });
-      return;
-    }
     setIsLoading(true);
     const formData = new FormData(e.currentTarget);
     const data = {
