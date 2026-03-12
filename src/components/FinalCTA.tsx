@@ -135,39 +135,6 @@ const FinalCTA = () => {
                 <Input name="email" type="email" placeholder="E-mail" className="h-12" required />
                 <Input name="company" placeholder="Empresa" className="h-12" required />
                 <Input name="phone" type="tel" placeholder="Telemóvel" className="h-12" value={formatPhone(phone)} onChange={handlePhoneChange} required />
-                
-                <Select value={sector} onValueChange={setSector} required>
-                  <SelectTrigger className="h-12">
-                    <SelectValue placeholder="Setor de Atividade" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="energia">Energia</SelectItem>
-                    <SelectItem value="transportes">Transportes</SelectItem>
-                    <SelectItem value="saude">Saúde</SelectItem>
-                    <SelectItem value="infraestruturas-digitais">Infraestruturas Digitais</SelectItem>
-                    <SelectItem value="banca">Banca e Serviços Financeiros</SelectItem>
-                    <SelectItem value="agua">Água</SelectItem>
-                    <SelectItem value="administracao">Administração Pública</SelectItem>
-                    <SelectItem value="postais">Serviços Postais</SelectItem>
-                    <SelectItem value="telecomunicacoes">Telecomunicações</SelectItem>
-                    <SelectItem value="residuos">Gestão de Resíduos</SelectItem>
-                    <SelectItem value="industria">Indústria Transformadora</SelectItem>
-                    <SelectItem value="fornecedores-digitais">Fornecedores Digitais</SelectItem>
-                    <SelectItem value="outro">Outro</SelectItem>
-                  </SelectContent>
-                </Select>
-
-                <Select value={companySize} onValueChange={setCompanySize} required>
-                  <SelectTrigger className="h-12">
-                    <SelectValue placeholder="Tamanho da Empresa" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="micro">Micro (1-9 funcionários)</SelectItem>
-                    <SelectItem value="pequena">Pequena (10-49 funcionários)</SelectItem>
-                    <SelectItem value="media">Média (50-249 funcionários)</SelectItem>
-                    <SelectItem value="grande">Grande (250+ funcionários)</SelectItem>
-                  </SelectContent>
-                </Select>
               </div>
               <div className="flex items-start gap-3 mb-6">
                 <Checkbox id="terms" className="mt-1" required />

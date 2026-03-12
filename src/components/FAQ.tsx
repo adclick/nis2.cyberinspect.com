@@ -3,20 +3,20 @@ import { MessageCircleQuestion } from "lucide-react";
 
 const faqs = [
   {
-    question: "O que é a Diretiva NIS2 e quando entra em vigor?",
-    answer: "A NIS2 (Diretiva 2022/2555) é a nova legislação europeia de cibersegurança que reforça a diretiva original NIS. Foi publicada em dezembro de 2022 e os Estados-Membros têm até 17 de outubro de 2024 para a transpor para a legislação nacional. Em Portugal, a transposição está em curso e as empresas devem preparar-se desde já para cumprir os requisitos."
+    question: "O que é a Diretiva NIS2 e como afeta os meus clientes?",
+    answer: "A NIS2 (Diretiva 2022/2555) é a nova legislação europeia de cibersegurança que obriga entidades em setores críticos a implementar medidas concretas de segurança, incluindo testes regulares e gestão de vulnerabilidades. Os seus clientes em setores como energia, saúde, transportes, banca ou infraestruturas digitais serão diretamente abrangidos — e vão precisar de parceiros que os ajudem a cumprir."
   },
   {
-    question: "A minha empresa está abrangida pela NIS2?",
-    answer: "A NIS2 aplica-se a entidades 'Essenciais' e 'Importantes' que operam em setores críticos. Entidades Essenciais incluem grandes operadores em energia, transportes, saúde, infraestruturas digitais, banca e água. Entidades Importantes abrangem média dimensão em setores como correios, gestão de resíduos, produção alimentar, químicos, manufatura e fornecedores digitais. O critério inclui dimensão da empresa, setor de atividade e criticidade dos serviços prestados."
+    question: "Como posso oferecer serviços NIS2 aos meus clientes com a CyberInspect?",
+    answer: "A CyberInspect permite-lhe executar testes de cibersegurança (vulnerability scanning, penetration testing, security assessments) de forma estruturada e escalável para múltiplos clientes. A plataforma gera relatórios e evidências técnicas prontas para auditorias, sem necessidade de criar processos do zero. Basta integrar a CyberInspect na sua oferta de serviços."
   },
   {
-    question: "Quais são as penalizações por não conformidade?",
-    answer: "As multas são significativas: Entidades Essenciais podem ser multadas até 10 milhões € ou 2% do volume de negócios anual global (o que for maior). Entidades Importantes enfrentam multas até 7 milhões € ou 1,4% do volume de negócios. Além disso, a gestão de topo é diretamente responsável e pode enfrentar sanções pessoais, incluindo proibição temporária de exercer funções de gestão."
+    question: "Que tipo de receita posso gerar como Parceiro?",
+    answer: "A NIS2 exige testes regulares e gestão contínua de vulnerabilidades — o que significa contratos recorrentes, não projetos pontuais. Além disso, cada vulnerabilidade identificada é uma oportunidade para vender serviços de remediação. Os Parceiros podem aumentar significativamente o ticket médio por cliente com margens superiores."
   },
   {
-    question: "O que são as medidas de gestão de risco exigidas?",
-    answer: "A NIS2 exige múltiplas medidas, incluindo: análise de risco e segurança de sistemas, gestão de incidentes, continuidade de negócio, segurança na cadeia de abastecimento, e crucialmente - testes regulares e gestão de vulnerabilidades. As empresas devem implementar políticas de criptografia, formação de colaboradores, controlo de acessos, autenticação multi-fator e comunicações seguras. Todas as medidas devem ser documentadas e demonstráveis em auditorias."
+    question: "Preciso de ter equipa especializada em cibersegurança?",
+    answer: "Não necessariamente. A CyberInspect foi desenhada para Service Providers que querem entrar ou crescer no mercado de cibersegurança. A plataforma automatiza os processos técnicos mais complexos e gera relatórios com apoio de IA, permitindo que a sua equipa entregue serviços de elevada qualidade sem precisar de especialistas dedicados."
   },
 ];
 
@@ -33,7 +33,7 @@ const FAQ = () => {
               </h2>
             </div>
             <p className="text-lg text-muted-foreground">
-              Tudo o que precisa de saber sobre a NIS2 e como preparar a sua empresa
+              Respostas às dúvidas mais comuns dos nossos Parceiros sobre a NIS2 e a CyberInspect
             </p>
           </div>
 
@@ -56,16 +56,16 @@ const FAQ = () => {
 
           <div className="mt-12 bg-gradient-to-r from-cyberLight/10 to-cyberBlue/10 border border-cyberLight/20 rounded-2xl p-8 text-center">
             <h3 className="text-xl font-semibold mb-3 text-foreground">
-              Ainda tem dúvidas sobre como preparar a sua empresa?
+              Quer saber mais sobre o programa de parceria?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Fale connosco para uma avaliação personalizada da sua situação face à NIS2
+              Fale connosco para conhecer as condições e começar a oferecer serviços NIS2 aos seus clientes
             </p>
             <a
               href="#form"
               className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-semibold h-11 px-8 bg-cyberLight text-white shadow-cta hover:shadow-neon hover:scale-105 transition-all duration-300 border border-white/10"
             >
-              Solicitar Consulta Gratuita
+              Tornar-se Parceiro
             </a>
           </div>
         </div>
