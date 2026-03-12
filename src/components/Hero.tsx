@@ -17,7 +17,7 @@ const Hero = () => {
 
       <div className="container relative z-10 mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center gap-2 bg-gradient-glass backdrop-blur-xl text-primary px-5 py-2.5 rounded-full text-sm font-medium border border-primary/20 shadow-glass">
+          <div className="inline-flex items-center gap-2 bg-gradient-glass backdrop-blur-xl text-cyberLight px-5 py-2.5 rounded-full text-sm font-medium border border-cyberLight/20 shadow-glass">
             <Rocket className="w-4 h-4" />
             <span>Para Parceiros</span>
           </div>
