@@ -57,7 +57,7 @@ const Educational = () => {
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3">A <span className="font-bold text-primary">responsabilidade é da gestão de topo</span></h3>
+                <h3 className="text-xl font-semibold mb-3">A <span className="font-bold text-cyberLight">responsabilidade é da gestão de topo</span></h3>
                 <p className="text-muted-foreground">
                   A direção das entidades tem responsabilidade legal direta pelo cumprimento da NIS2. 
                   Não implementar medidas de segurança, incluindo testes e gestão de vulnerabilidades, pode resultar em sanções pessoais e proibição temporária de funções.
