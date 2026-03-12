@@ -4,7 +4,7 @@ import { MessageCircleQuestion } from "lucide-react";
 const faqs = [
   {
     question: "O que é a Diretiva NIS2 e como afeta os meus clientes?",
-    answer: "A NIS2 (Diretiva 2022/2555) é a nova legislação europeia de cibersegurança que obriga entidades em setores críticos a implementar medidas concretas de segurança, incluindo testes regulares e gestão de vulnerabilidades. Os seus clientes em setores como energia, saúde, transportes, banca ou infraestruturas digitais serão diretamente abrangidos — e vão precisar de parceiros que os ajudem a cumprir."
+    answer: "A NIS2 (Diretiva 2022/2555) é a nova legislação europeia de cibersegurança que obriga entidades em setores críticos a implementar medidas concretas de segurança, incluindo testes regulares e gestão de vulnerabilidades. Os seus clientes em setores como energia, saúde, transportes, banca ou infraestruturas digitais serão diretamente abrangidos - e vão precisar de parceiros que os ajudem a cumprir."
   },
   {
     question: "Como posso oferecer serviços NIS2 aos meus clientes com a CyberInspect?",
@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Que tipo de receita posso gerar como Parceiro?",
-    answer: "A NIS2 exige testes regulares e gestão contínua de vulnerabilidades — o que significa contratos recorrentes, não projetos pontuais. Além disso, cada vulnerabilidade identificada é uma oportunidade para vender serviços de remediação. Os Parceiros podem aumentar significativamente o ticket médio por cliente com margens superiores."
+    answer: "A NIS2 exige testes regulares e gestão contínua de vulnerabilidades - o que significa contratos recorrentes, não projetos pontuais. Além disso, cada vulnerabilidade identificada é uma oportunidade para vender serviços de remediação. Os Parceiros podem aumentar significativamente o ticket médio por cliente com margens superiores."
   },
   {
     question: "Preciso de ter equipa especializada em cibersegurança?",
