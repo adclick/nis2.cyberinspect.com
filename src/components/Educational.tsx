@@ -29,7 +29,7 @@ const Educational = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-              A NIS2 não é opcional. <span className="text-primary">É obrigatória.</span>
+              A NIS2 não é opcional. <span className="text-cyberLight">É obrigatória.</span>
             </h2>
             <p className="text-lg text-muted-foreground">
               Os números mostram a urgência - a conformidade começa agora
