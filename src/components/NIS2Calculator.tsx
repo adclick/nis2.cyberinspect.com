@@ -64,8 +64,8 @@ const NIS2Calculator = () => {
                     onClick={() => setEntityType("essential")}
                     className={`p-4 rounded-lg border-2 transition-all duration-300 text-left ${
                       entityType === "essential"
-                        ? "border-primary bg-primary/5 shadow-card"
-                        : "border-border hover:border-primary/40 bg-card"
+                        ? "border-cyberLight bg-cyberLight/5 shadow-card"
+                        : "border-border hover:border-cyberLight/40 bg-card"
                     }`}
                   >
                     <div className="flex items-start gap-3">
