@@ -39,7 +39,7 @@ const Index = () => {
       <main>
         <Hero />
         <NIS2Opportunity />
-        <WhyOpportunityForSP />
+        
         <SPNeedScale />
         <HowCyberInspectHelps />
         <FinalCTA />
