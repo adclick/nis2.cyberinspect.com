@@ -124,7 +124,7 @@ const FinalCTA = () => {
 
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">Torne-se um parceiro CyberInspect</h2>
               <p className="text-lg text-muted-foreground">
-                Preencha o formulário e a nossa equipa entrará em contacto para apresentar as condições de parceria.
+                Preencha o formulário e a nossa equipa entrará em contacto para dar a conhecer o produto e as condições de parceria.
               </p>
             </div>
 
