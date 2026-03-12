@@ -29,7 +29,7 @@ const FAQ = () => {
             <div className="flex items-center justify-center gap-3 mb-4">
               <MessageCircleQuestion className="w-10 h-10 text-primary" />
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                Perguntas <span className="bg-gradient-cyber bg-clip-text text-transparent">frequentes</span>
+                Perguntas <span className="text-primary">frequentes</span>
               </h2>
             </div>
             <p className="text-lg text-muted-foreground">

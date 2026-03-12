@@ -23,7 +23,7 @@ const NIS2Info = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-              Entenda a <span className="bg-gradient-cyber bg-clip-text text-transparent">Diretiva NIS2</span>
+              Entenda a <span className="text-primary">Diretiva NIS2</span>
             </h2>
             <p className="text-lg text-muted-foreground">
               Novos requisitos de cibersegurança para organizações em setores críticos
@@ -53,7 +53,7 @@ const NIS2Info = () => {
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3">Onde a <span className="font-bold bg-gradient-cta bg-clip-text text-transparent">CyberInspect</span> se posiciona
+                <h3 className="text-xl font-semibold mb-3">Onde a <span className="font-bold text-primary">CyberInspect</span> se posiciona
                 </h3>
                 <p className="text-muted-foreground mb-4">
                   A NIS2 exige "medidas concretas de segurança, incluindo testes regulares e gestão de vulnerabilidades". 

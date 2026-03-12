@@ -42,7 +42,7 @@ const HowCyberInspectHelps = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
               A{" "}
-              <span className="bg-gradient-cyber bg-clip-text text-transparent">
+              <span className="text-primary">
                 CyberInspect
               </span>{" "}
               é a solução
