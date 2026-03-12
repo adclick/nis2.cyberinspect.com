@@ -29,7 +29,7 @@ const Educational = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-              A NIS2 não é opcional. <span className="text-primary">É obrigatória.</span>
+              A NIS2 não é opcional. <span className="text-cyberLight">É obrigatória.</span>
             </h2>
             <p className="text-lg text-muted-foreground">
               Os números mostram a urgência - a conformidade começa agora
@@ -44,7 +44,7 @@ const Educational = () => {
                   <div className="w-12 h-12 rounded-xl bg-gradient-cta flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-7 h-7 text-white" />
                   </div>
-                  <p className="text-4xl font-bold mb-2 text-primary">{stat.value}</p>
+                  <p className="text-4xl font-bold mb-2 text-cyberLight">{stat.value}</p>
                   <p className="text-muted-foreground">{stat.label}</p>
                 </Card>
               );
@@ -57,7 +57,7 @@ const Educational = () => {
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3">A <span className="font-bold text-primary">responsabilidade é da gestão de topo</span></h3>
+                <h3 className="text-xl font-semibold mb-3">A <span className="font-bold text-cyberLight">responsabilidade é da gestão de topo</span></h3>
                 <p className="text-muted-foreground">
                   A direção das entidades tem responsabilidade legal direta pelo cumprimento da NIS2. 
                   Não implementar medidas de segurança, incluindo testes e gestão de vulnerabilidades, pode resultar em sanções pessoais e proibição temporária de funções.

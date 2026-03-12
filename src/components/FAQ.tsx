@@ -27,9 +27,9 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <MessageCircleQuestion className="w-10 h-10 text-primary" />
+              <MessageCircleQuestion className="w-10 h-10 text-cyberLight" />
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                Perguntas <span className="text-primary">frequentes</span>
+                Perguntas <span className="text-cyberLight">frequentes</span>
               </h2>
             </div>
             <p className="text-lg text-muted-foreground">

@@ -39,7 +39,7 @@ const NIS2Calculator = () => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
-              Calculadora de <span className="text-primary">multas NIS2</span>
+              Calculadora de <span className="text-cyberLight">multas NIS2</span>
             </h2>
             <p className="text-base text-muted-foreground">
               Descubra o risco financeiro de não conformidade com a Diretiva NIS2
@@ -111,7 +111,7 @@ const NIS2Calculator = () => {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <Label className="text-base font-semibold">Volume de Negócios Anual</Label>
-                  <span className="text-xl font-bold text-primary">{formatCurrency(revenue)}</span>
+                  <span className="text-xl font-bold text-cyberLight">{formatCurrency(revenue)}</span>
                 </div>
                 
                 <Slider

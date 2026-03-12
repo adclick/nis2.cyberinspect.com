@@ -7,7 +7,7 @@ const FinalPositioning = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground tracking-tight leading-tight">
-              CyberInspect: referência em <span className="text-primary">conformidade NIS2</span>
+              CyberInspect: referência em <span className="text-cyberLight">conformidade NIS2</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground/90 max-w-3xl mx-auto leading-relaxed">
               Solução especializada na execução prática dos requisitos de testes e gestão de vulnerabilidades da Diretiva NIS2.

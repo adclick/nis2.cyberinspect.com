@@ -32,7 +32,7 @@ const NIS2Opportunity = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
               Qual é a{" "}
-              <span className="text-primary">
+              <span className="text-cyberLight">
                 oportunidade
               </span>{" "}
               criada pela NIS2?
@@ -56,7 +56,7 @@ const NIS2Opportunity = () => {
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-1 text-primary">
+                      <h3 className="text-xl font-bold mb-1 text-cyberLight">
                         {stat.value}
                       </h3>
                       <p className="text-muted-foreground">{stat.label}</p>
