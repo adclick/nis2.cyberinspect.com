@@ -49,7 +49,7 @@ const HowCyberInspectHelps = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               O primeiro passo para transformar a NIS2 num serviço escalável,
-              estruturado e recorrente — numa única plataforma.
+              estruturado e recorrente - numa única plataforma.
             </p>
           </div>
 

@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Que tipo de receita posso gerar como Parceiro?",
-    answer: "A NIS2 exige testes regulares e gestão contínua de vulnerabilidades — o que significa contratos recorrentes, não projetos pontuais. Além disso, cada vulnerabilidade identificada é uma oportunidade para vender serviços de remediação. Os Parceiros podem aumentar significativamente o ticket médio por cliente com margens superiores."
+    answer: "A NIS2 exige testes regulares e gestão contínua de vulnerabilidades - o que significa contratos recorrentes, não projetos pontuais. Além disso, cada vulnerabilidade identificada é uma oportunidade para vender serviços de remediação. Os Parceiros podem aumentar significativamente o ticket médio por cliente com margens superiores."
   },
   {
     question: "Preciso de ter equipa especializada em cibersegurança?",
