@@ -83,7 +83,7 @@ const FinalCTA = () => {
       setIsLoading(false);
     }
   };
-  return <section className="py-24 bg-gradient-hero relative overflow-hidden">
+  return <section id="form" className="py-24 bg-gradient-hero relative overflow-hidden scroll-mt-20">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent"></div>
 
       <div className="container relative z-10 mx-auto px-4">
