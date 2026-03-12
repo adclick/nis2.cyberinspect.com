@@ -74,7 +74,7 @@ const HowCyberInspectHelps = () => {
           <div className="text-center">
             <Button variant="cta" size="xl" className="group" asChild>
               <a href="#form">
-                Tornar-se Parceiro
+                Saber Mais
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </a>
             </Button>
